@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <div class="phone">
+                <img src="img/phone.png" alt="phone">
+                <h1 class="header__title">
+                    Личный кабинет Cvetogis
+                </h1>
+                <div class="header__text">Автоматический заказ цветов по календарю с доставкой</div>
+            </div>
+            </div>
+    </header>
+    <section class="menu">
+        <div class="menu__inner">
+            <div class="logo">
+                <img src="img/logo.svg" alt="logo">
+                <p class="logo__text">Сеть доставки цветов и подарков</p>
+            </div>
+            
+            <div class="menu__mobile">
+                <button class="menu__btn">
+                    <span class="menu__btn-line"></span>
+                </button>
+            </div>
+            <div class="options">
+                <img class="options__icon" src="img/menu1.svg" alt="icon">
+                <select class="options__text city">
+                    <option value="" name="city">Нур-Султан</option>
+                    <option value="" name="city">Караганда</option>
+                    <option value="" name="city">Алматы</option>
+                </select>
+                
+                <select class="options__text currency">
+                    <option value="" name="currency">Тенге</option>
+                    <option value="" name="currency">Рубли</option>
+                    <option value="" name="currency">Доллары</option>
+                </select>
+            </div>
+            <div class="time">Доставка с <strong>9:00</strong>до <strong>22:00</strong></div>
+            <div class="menu__phone">
+                <div class="phone__number"><img src="img/menu3.svg" alt="whatsapp"><strong>+7 707 951-49-36</strong></div>
+                <div class="phone__text"><a href="" class="phone__link">Обратный звонок</a> (9:00–22:00)</div>
+            </div>
+            <div class="enter">
+                <img src="img/menu4.svg" alt="icon">
+                <img class="enter__cart" src="img/menu5.svg" alt="icon">
+                <img src="img/menu6.svg" alt="icon">
+                <p class="enter__text">Вход</p>
+            </div>
+        </div>
+        <nav class="nav">
+            <ul class="nav__menu">
+                <li class="nav__menu-list"><a href="#" class="nav__menu-link">Главная</a></li>
+                <li class="nav__menu-list"><a href="" class="nav__menu-link">Магазин</a></li>
+                <li class="nav__menu-list">
+                    <select class="nav__currency" value="" name="whom" id="">
+                        <option value="" name="city">Кому</option>
+                        <option value="" name="city">Мужчине</option>
+                        <option value="" name="city">Женщине</option>
+                    </select>
+                </li>
+                <li class="nav__menu-list">
+                    <select class="nav__currency" value="" name="whom" id="">
+                        <option value="" name="city">Повод</option>
+                        <option value="" name="city">Мужчине</option>
+                        <option value="" name="city">Женщине</option>
+                    </select>
+                </li>
+                <li class="nav__menu-list">
+                    <select class="nav__currency" value="" name="whom" id="">
+                        <option value="" name="city">Подарки</option>
+                        <option value="" name="city">Мужчине</option>
+                        <option value="" name="city">Женщине</option>
+                    </select>
+                </li>
+                <li class="nav__menu-list"><a href="" class="nav__menu-link">Доставка и оплата</a></li>
+                <li class="nav__menu-list"><a href="" class="nav__menu-link">О нас</a></li>
+                <li class="nav__menu-list"><a href="" class="nav__menu-link num">+7 707 951-49-36</a></li>
+            </ul>
+        </nav>
+        
+    </section>
+    <section class="products">
+        <div class="container">
+            <div class="products__inner">
+                <nav class="products__column">
+                    <ul class="products__column-menu">
+                        <li class="products__column-list">
+                            <a href="#tab_01" class="products__column-item active">
+                                <img class="products__column-img" src="img/flower2.png" alt="img">
+                            </a>
+                        </li>
+                        <li class="products__column-list">
+                            <a href="#tab_02" class="products__column-item active">
+                                <img class="products__column-img" src="img/flower2.png" alt="img">
+                            </a>
+                        </li>
+                        <li class="products__column-list">
+                            <a href="#tab_01" class="products__column-item active">
+                                <img class="products__column-img" src="img/flower3.png" alt="img">
+                            </a>
+                        </li>
+                        <li class="products__column-list">
+                            <a href="#tab_02" class="products__column-item active">
+                                <img class="products__column-img" src="img/flower4.png" alt="img">
+                            </a>
+                        </li>
+                        <li class="products__column-list">
+                            <a href="#tab_01" class="products__column-item active">
+                                <img class="products__column-img" src="img/flower5.png" alt="img">
+                            </a>
+                        </li>
+                        <li class="products__column-list">
+                            <a href="#tab_02" class="products__column-item active">
+                                <img class="products__column-img" src="img/flower5.png" alt="img">
+                            </a>
+                        </li>
+                    </ul>
+                    
+                </nav>
+                <div id="tab_01" class="products__tabs first">
+                    <div class="products__photo">
+                        <img src="img/bg.png" alt="photo">
+                        <div class="products__description">
+                            
+                            <div class="products__title">
+                                <img class="products__img" src="img/stick.svg" alt="sale">
+                                <h1 class="products__description-title">Композиция из цветов тёплых оттенков</h1>
+                            </div>
+                            <div class="products__price"> <span class="products__price-line">12 800</span>    8960 тг.</div>
+                            
+                            <p class="products__text"> <strong><span class="products__price-text">Состав:</span></strong> 7 красных роз, 3 оранжевые розы, 3 желтые розы, 5 лилий</p>
+                            <p class="products__text"> <strong><span class="products__price-text">Доставка:</span></strong> в течение часа по Нур-Султану, от 2 часов в пригород</p>
+                            <p class="products__text"> <strong><span class="products__price-text">Описание:</span></strong>  цвет букета может отличаться в зависимости от наличия цветов в свежей поставке с Голландии, подробную информацию уточняйте у оператора.
+                                Оформление может быть изменено в зависимости от наличия такого же оформления в магазине.
+                            </p>
+                            <p class="description">Букет будет выполнен цветочным магазином, в зависимости от наличия цветов на складе.</p>
+                            <div class="products__description-counter">
+                                <div class="products__description-minus"><img src="img/minus.svg" alt="minus"></div>
+                                <span class="counter">1</span>
+                                <div class="products__description-plus"><img src="img/plus.svg" alt="plus"></div>
+                                <button class="cart">В корзину</button>
+                                <button id="like" class="like"><img src="img/heart.svg" alt="like"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab_02" class="products__tabs second">
+                    <div class="products__photo">
+                        <img src="img/bg1.png" alt="photo">
+                        <div class="products__description">
+                            <div class="products__title">
+                                <img class="products__img" src="img/stick.svg" alt="sale">
+                                <h1 class="products__description-title">Розы красные, голландские</h1>
+                            </div>
+                            <div class="products__price"> <span class="products__price-line">2200</span>  1900 тг. за штуку</div>
+                            
+                            
+                            <p class="products__text"> <strong><span class="products__price-text">Доставка:</span></strong> в течение часа по Нур-Султану, от 2 часов в пригород</p>
+                            <p class="products__text"> <strong><span class="products__price-text">Описание:</span></strong>  цвет букета может отличаться в зависимости от наличия цветов в свежей поставке с Голландии, подробную информацию уточняйте у оператора.
+                                Оформление может быть изменено в зависимости от наличия такого же оформления в магазине.
+                            </p>
+                            <p class="description">Букет будет выполнен цветочным магазином, в зависимости от наличия цветов на складе.</p>
+                            <div class="products__description-counter">
+                                <div class="products__description-minus"><img src="img/minus.svg" alt="minus"></div>
+                                <span class="counter">1</span>
+                                <div class="products__description-plus"><img src="img/plus.svg" alt="plus"></div>
+                                
+                                <button class="cart">В корзину</button>
+                            <button class="like"><img src="img/heart.svg" alt="like"></button>
+                            </div>
+                            
+                            
+                            <div class="btn__nums">
+                                <button class="btn__number">
+                                    3
+                                </button>
+                                <button class="btn__number">
+                                    5
+                                </button>
+                                <button class="btn__number">
+                                    7
+                                </button>
+                                <button class="btn__number">
+                                    9
+                                </button>
+                                <button class="btn__number">
+                                    15
+                                </button>
+                                <button class="btn__number">
+                                    19
+                                </button>
+                                <button class="btn__number">
+                                    25
+                                </button>
+                                <button class="btn__number">
+                                    31
+                                </button>
+                                <button class="btn__number">
+                                    41
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu__slider-box">
+                <div class="menu__slider">
+                    <div class="menu__slider-item">
+                        <div class="products__description slider-1">
+                            <img class="slider__img" src="img/bg.png" alt="slider"> 
+                            <div class="products__title">
+                                <!-- <img class="products__img" src="img/stick.svg" alt="sale"> -->
+                                <h1 class="products__description-title">Композиция из цветов тёплых оттенков</h1>
+                            </div>
+                            <div class="products__price"> <span class="products__price-line">12 800</span>    8960 тг.</div>
+                            <p class="products__text"> <strong><span class="products__price-text">Состав:</span></strong> 7 красных роз, 3 оранжевые розы, 3 желтые розы, 5 лилий</p>
+                            <p class="products__text"> <strong><span class="products__price-text">Доставка:</span></strong> в течение часа по Нур-Султану, от 2 часов в пригород</p>
+                            <p class="products__text"> <strong><span class="products__price-text">Описание:</span></strong>  цвет букета может отличаться в зависимости от наличия цветов в свежей поставке с Голландии, подробную информацию уточняйте у оператора.
+                                Оформление может быть изменено в зависимости от наличия такого же оформления в магазине.
+                            </p>
+                            <p class="description">Букет будет выполнен цветочным магазином, в зависимости от наличия цветов на складе.</p>
+                            <div class="products__description-counter">
+                                <div class="products__description-minus"><img src="img/minus.svg" alt="minus"></div>
+                                <span class="counter">1</span>
+                                <div class="products__description-plus"><img src="img/plus.svg" alt="plus"></div>
+                            </div>
+                            <div class="prod-btn">
+                                <button class="cart">В корзину</button>
+                            <button class="like"><img src="img/heart.svg" alt="like"></button>
+                            </div>
+                        </div>
+                        <div class="products__description slider-2">
+                            <img class="slider__img" src="img/bg1.png" alt="slider">
+                            <div class="products__title">
+                                <!-- <img class="products__img" src="img/stick.svg" alt="sale"> -->
+                                <h1 class="products__description-title">Розы красные, голландские</h1>
+                            </div>
+                            <div class="products__price"> <span class="products__price-line">2200</span>  1900 тг. за штуку</div>
+                            <p class="products__text"> <strong><span class="products__price-text">Доставка:</span></strong> в течение часа по Нур-Султану, от 2 часов в пригород</p>
+                            <p class="products__text"> <strong><span class="products__price-text">Описание:</span></strong>  цвет букета может отличаться в зависимости от наличия цветов в свежей поставке с Голландии, подробную информацию уточняйте у оператора.
+                                Оформление может быть изменено в зависимости от наличия такого же оформления в магазине.
+                            </p>
+                            <p class="description">Букет будет выполнен цветочным магазином, в зависимости от наличия цветов на складе.</p>
+                            <div class="products__description-counter">
+                                <div class="products__description-minus"><img src="img/minus.svg" alt="minus"></div>
+                                <span class="counter">1</span>
+                                <div class="products__description-plus"><img src="img/plus.svg" alt="plus"></div>
+                            </div>
+                            <div class="prod-btn">
+                                <button class="cart">В корзину</button>
+                            <button class="like"><img src="img/heart.svg" alt="like"></button>
+                            </div>
+                            <div class="btn__nums">
+                                <button class="btn__number">
+                                    3
+                                </button>
+                                <button class="btn__number">
+                                    5
+                                </button>
+                                <button class="btn__number">
+                                    7
+                                </button>
+                                <button class="btn__number">
+                                    9
+                                </button>
+                                <button class="btn__number">
+                                    15
+                                </button>
+                                <button class="btn__number">
+                                    19
+                                </button>
+                                <button class="btn__number">
+                                    25
+                                </button>
+                                <button class="btn__number">
+                                    31
+                                </button>
+                                <button class="btn__number">
+                                    41
+                                </button>
+                            </div>
+                    </div>
+                    </div>
+                </div>                
+            </div>
+            
+            <div class="products__var">
+                <h2 class="products__var-title">Подходящие подарки</h2>
+                <a href="#" class="products__var-link">Все варианты <img src="img/arrow-right.svg" alt="arrow"></a>
+            </div>
+            <div class="products__var-cards">
+                <div class="products__var-card">
+                    <img src="img/item1.png" alt="item">
+                    <div class="price-card"> <span class="card-price">4200</span> <div class="card-text">тг.</div>  <img class="card-icon" src="img/icon2.svg" alt="icon"></div>
+                    
+                </div>
+                <div class="products__var-card">
+                    <img src="img/item2.png" alt="item">
+                    <div class="price-card"> <span class="card-price">2200</span> <div class="card-text">тг.</div> <img class="card-icon" src="img/icon2.svg" alt="icon"></div>
+                    
+                </div>
+                <div class="products__var-card">
+                    <img src="img/item3.png" alt="item">
+                    <div class="price-card"> <span class="card-price">7400</span> <div class="card-text">тг.</div> <img class="card-icon" src="img/icon2.svg" alt="icon"></div>
+                    
+                </div>
+                <div class="products__var-card">
+                    <img src="img/item4.png" alt="item">
+                    <div class="price-card"> <span class="card-price">8600</span> <div class="card-text">тг.</div> <img class="card-icon" src="img/icon2.svg" alt="icon"></div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="history">
+        <div class="container">
+            <div class="history__inner">
+                <h1 class="history__title">Вы недавно смотрели</h1>
+                <div class="history__cards">
+                    <div class="history__card">
+                        <img src="img/history1.png" alt="history item">
+                        <a href="" class="history__card-title">Букет нежно-розовых роз «Прованс»</a>
+                        <div class="history__price"><span class="history__text">12 800тг.</span> <a class="history__cart" href="#">В корзину</a>
+                            <img class="history__icon" src="img/heart.svg" alt="icon"></div>
+                        
+                    </div>
+                    <div class="history__card">
+                        <img src="img/history2.png" alt="history item">
+                        <a href="" class="history__card-title">Букет нежно-розовых роз «Прованс»</a>
+                        <div class="history__price"><span class="history__text">9300тг.</span><a class="history__cart" href="#">В корзину</a>
+                            <img class="history__icon" src="img/heart.svg" alt="icon"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="quote">
+        <div class="container">
+            <p class="quote__text">
+                Как отмечает Жан Пиаже, символический метафоризм начинает классицизм. Художественное опосредование продолжает социально-психологический фактор. Площадь интегрирует урбанистический страх, о чем и писал А.Маслоу в своей работе "Мотивация и личность".
+            </p>
+            <p class="quote__text quote1">
+                Инвариант, несмотря на внешние воздействия, связывает модернизм. На коротко подстриженной траве можно сидеть и лежать, но интенция возможна. Художественная богема просветляет концептуальный конформизм. Одиночество, куда входят Пик-Дистрикт, Сноудония и другие многочисленные национальные резерваты природы и парки, превышает модернизм. Селитра, как бы это ни казалось парадоксальным, монотонно иллюстрирует глубокий льежский оружейник, таким образом, второй комплекс движущих сил получил разработку в трудах А.Берталанфи и Ш.Бюлера. Выразительное существенно продолжает позитивистский импульс, однако само по себе состояние игры всегда амбивалентно.
+            </p>
+            <p class="quote__text quote2">
+
+Водохранилище многопланово начинает понимающий катарсис. Холерик представляет собой художественный ритуал. Гармония диссонирует архетип. Эгоцентризм неизменяем.
+            </p>
+        </div>
+    </section>
+    <footer class="footer">
+            <div class="footer__inner">
+                <div class="footer__logo">
+                    <p class="footer__text">© Cvetogis, 2021</p>
+                    <a href="" class="footer__link">Публичная оферта</a>
+                    <a href="" class="footer__link">Защита покупателей</a>
+                </div>
+                <div class="footer__payment">
+                    <a href="" class="footer__payment-link"><img src="img/footer1.svg" alt="icon"></a>
+                    <a href="" class="footer__payment-link"><img src="img/footer2.svg" alt="icon"></a>
+                    <a href="" class="footer__payment-link"><img src="img/footer3.svg" alt="icon"></a>
+                    <a href="" class="footer__payment-link"><img src="img/footer4.svg" alt="icon"></a>
+                    <a href="" class="footer__payment-link"><img src="img/footer5.svg" alt="icon"></a>
+                    <a href="" class="footer__payment-link"><img src="img/footer6.svg" alt="icon"></a>
+                </div>
+            </div>
+        <div class="security">
+            <img src="img/shield.svg" alt="icon">
+            <p class="security__text">100% безопасность платежей</p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

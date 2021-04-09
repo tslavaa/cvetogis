@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Корзина</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <div class="phone">
+                <img src="img/phone.png" alt="phone">
+                <h1 class="header__title">
+                    Личный кабинет Cvetogis
+                </h1>
+                <div class="header__text">Автоматический заказ цветов по календарю с доставкой</div>
+            </div>
+            </div>
+    </header>
+    <section class="menu">
+        <div class="menu__inner">
+            <div class="logo">
+                <img src="img/logo.svg" alt="logo">
+                <p class="logo__text">Сеть доставки цветов и подарков</p>
+            </div>
+            <div class="menu__mobile">
+                <button class="menu__btn">
+                    <span class="menu__btn-line"></span>
+                </button>
+            </div>
+            <div class="options">
+                <img class="options__icon" src="img/menu1.svg" alt="icon">
+                <select class="options__text city">
+                    <option value="" name="city">Нур-Султан</option>
+                    <option value="" name="city">Караганда</option>
+                    <option value="" name="city">Алматы</option>
+                </select>
+                
+                <select class="options__text currency">
+                    <option value="" name="currency">Тенге</option>
+                    <option value="" name="currency">Рубли</option>
+                    <option value="" name="currency">Доллары</option>
+                </select>
+            </div>
+            <div class="time">Доставка с <strong>9:00</strong>до <strong>22:00</strong></div>
+            <div class="menu__phone">
+                <div class="phone__number"><img src="img/menu3.svg" alt="whatsapp"><strong>+7 707 951-49-36</strong></div>
+                <div class="phone__text"><a href="" class="phone__link">Обратный звонок</a> (9:00–22:00)</div>
+            </div>
+            <div class="enter">
+                <img src="img/menu4.svg" alt="icon">
+                <img class="enter__cart" src="img/menu5.svg" alt="icon">
+                <img src="img/menu6.svg" alt="icon">
+                <p class="enter__text">Вход</p>
+            </div>
+        </div>
+        <nav class="nav">
+            <ul class="nav__menu">
+                <li class="nav__menu-list"><a href="" class="nav__menu-link">Главная</a></li>
+                <li class="nav__menu-list"><a href="" class="nav__menu-link">Магазин</a></li>
+                <li class="nav__menu-list">
+                    <select class="nav__currency" value="" name="whom" id="">
+                        <option value="" name="city">Кому</option>
+                        <option value="" name="city">Мужчине</option>
+                        <option value="" name="city">Женщине</option>
+                    </select>
+                </li>
+                <li class="nav__menu-list">
+                    <select class="nav__currency" value="" name="whom" id="">
+                        <option value="" name="city">Повод</option>
+                        <option value="" name="city">Мужчине</option>
+                        <option value="" name="city">Женщине</option>
+                    </select>
+                </li>
+                <li class="nav__menu-list">
+                    <select class="nav__currency" value="" name="whom" id="">
+                        <option value="" name="city">Подарки</option>
+                        <option value="" name="city">Мужчине</option>
+                        <option value="" name="city">Женщине</option>
+                    </select>
+                </li>
+                <li class="nav__menu-list"><a href="" class="nav__menu-link">Доставка и оплата</a></li>
+                <li class="nav__menu-list"><a href="" class="nav__menu-link">О нас</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section class="basket">
+        <div class="container">
+            
+                <a href="#basket__tab-01" class="basket__item-trigger">
+                    Корзина
+                </a>
+                
+            
+            
+            <div id="basket__tab-01" class="basket__tab">
+                <div class="basket__tab-item">
+                    <div class="accordion__item-content">
+                        <input type="checkbox" id="selectAll">
+                        <label class="select-all__text" for="select-all">
+                            Выбрать все
+                        </label>
+                    </div>
+                    <div class="basket__item1">
+                        <input type="checkbox" id="selectItem">
+                        <label class="basket__item" for="selectItem">
+                            <img src="img/label1.svg" alt="icon">
+                        </label>
+                        <a href="" class="basket__item-title">Розы нежно-розовые «Пиастр», 50 см</a>
+                        <div class="basket__item-price">2500 тг.</div>
+                        <div class="quantity">
+                            <button class="basket-btn minus-btn" type="button" name="button">
+                                <img src="img/minus.svg" alt="" />
+                            </button>
+                            <input type="text" name="name" value="1" disabled>
+                            <button class="basket-btn plus-btn" type="button" name="button">
+                                <img src="img/plus.svg" alt="" />
+                            </button>
+                            
+                        </div>
+                    </div>
+                    <div class="basket__item-btn">
+                        <div class="basket__cursor">
+                            <img src="img/heart.svg" alt="icon">
+                            <p class="basket__btn-text">В избранное</p>
+                            <img src="img/delete.svg" alt="icon">
+                            <p class="basket__btn-text">Удалить</p>
+                        </div>
+                        <p class="sale"><span class="sale-price">3300 тг.</span>Скидка 800 тг.</p>
+                    </div>
+                    <div class="basket__item2">
+                        <input type="checkbox" id="selectItem">
+                        <label class="basket__item" for="selectItem">
+                            <img src="img/label2.svg" alt="icon">
+                        </label>
+                        <a href="" class="basket__item-title">Флисовый медведь, бежевый, 60 см</a>
+                        <div class="basket__item-price">14 500 тг.</div>
+                        <div class="quantity">
+                            <button class="basket-btn minus-btn" type="button" name="button">
+                                <img src="img/minus.svg" alt="" />
+                              </button>
+                            <input type="text" name="name" value="1" disabled>
+                            <button class="basket-btn plus-btn" type="button" name="button">
+                                <img src="img/plus.svg" alt="" />
+                              </button>
+                            
+                          </div>
+                        
+                    </div>
+                    <div class="basket__item-btn">
+                        <div class="basket__cursor">
+                            <img src="img/heart.svg" alt="icon">
+                            <p class="basket__btn-text">В избранное</p>
+                            <img src="img/delete.svg" alt="icon">
+                            <p class="basket__btn-text">Удалить</p>
+                        </div>
+                    </div>
+                    <form action="">
+                        <div class="form">
+                            <input class="basket__form-input" placeholder="Код купона" type="text">
+                            <button class="basket__form-btn1"><img src="img/form.svg" alt="icon"></button>
+                            <p class="basket__form-text">Промежуточный итог: <strong>2 товара на сумму 77000</strong> </p>
+                            <a href="#basket__tab-02" class="basket__form-btn2">Перейти к оформлению</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <a href="#basket__tab-02" class="basket__item-trigger">
+                Дополнительно
+            </a>
+            <div id="basket__tab-02" class="basket__tab">
+                <div id="basket__tab-02" class="basket__tab-item">
+                    <p class="basket-card-text">Добавьте к своему заказу приятные подарки</p>
+                    <div class="products__var-cards basket__cards">
+                        <div class="products__var-card">
+                            <img src="img/item1.png" alt="item">
+                            <div class="price-card"> <span class="card-price">4200</span> <div class="card-text">тг.</div>  <img class="card-icon" src="img/icon2.svg" alt="icon"></div>
+                            
+                        </div>
+                        <div class="products__var-card">
+                            <img src="img/item2.png" alt="item">
+                            <div class="price-card"> <span class="card-price">2200</span> <div class="card-text">тг.</div> <img class="card-icon" src="img/icon2.svg" alt="icon"></div>
+                            
+                        </div>
+                        <div class="products__var-card">
+                            <img src="img/item3.png" alt="item">
+                            <div class="price-card"> <span class="card-price">7400</span> <div class="card-text">тг.</div> <img class="card-icon" src="img/icon2.svg" alt="icon"></div>
+                            
+                        </div>
+                        <div class="products__var-card">
+                            <img src="img/item4.png" alt="item">
+                            <div class="price-card"> <span class="card-price">8600</span> <div class="card-text">тг.</div> <img class="card-icon" src="img/icon2.svg" alt="icon"></div>
+                            
+                        </div>
+                    </div>
+                    <form action="">
+                        <div class="form2">
+                            <input class="basket__form-input" placeholder="Код купона" type="text">
+                            <button class="basket__form-btn1"><img src="img/form.svg" alt="icon"></button>
+                            <p class="basket__form-text">Промежуточный итог: <strong>2 товара на сумму 77000</strong> </p>
+                            <a href="#basket__tab-01" class="back__btn">Назад</a>
+                            <a href="#basket__tab-03" class="go__btn">Далее</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <a href="#basket__tab-03" class="basket__item-trigger">
+                Доставка
+            </a>
+            <div id="basket__tab-03" class="basket__tab">
+                <div id="basket__tab-03" class="basket__tab-item">
+                    <form action="">
+                        <div class="basket__form-radios">
+                            <input type="radio" checked name="choose" value=""><label class="courier" for="">Курьер</label>
+                            <a href="#basket__tab-01"><input type="radio" name="choose" value=""><label class="courier1" for="">Самовывоз</label></a>
+                        </div>
+                    </form>
+                    <form action="">
+                        <div class="form__city">
+                            <p class="form__city-text">Город</p>
+                            <select class="select__form-city" name="" id="">
+                                <option value="" name="city">Нур-Султан</option>
+                                <option value="" name="city">Караганда</option>
+                                <option value="" name="city">Алматы</option>
+                            </select>
+                            <p class="form__city-text">Улица</p>
+                            <input class="form__input-text" type="text" name="city" id="">
+                            <p class="form__city-text">Номер дома</p>
+                            <input class="form__input-text" type="text" name="city" id="">
+                            <p class="form__city-text">Квартира</p>
+                            <input class="form__input-text" type="text" name="city" id="">
+                            <div class="form__date">
+                                <p class="form__city-text">Дата доставки</p>
+                                <input type="date" name="calendar" value="" max="2100-01-01" min="2021-01-01">
+                                <p class="form__city-text">Время</p>
+                                <select class="form__date-time" name="time" id="">
+                                    <option value="" name="time">9:00-11:00</option>
+                                    <option value="" name="time">10:00-12:00</option>
+                                    <option value="" name="time">11:00-13:00</option>
+                                    <option value="" name="time">12:00-14:00</option>
+                                    <option value="" name="time">14:00-16:00</option>
+                                    <option value="" name="time">16:00-18:00</option>
+                                    <option value="" name="time">18:00-20:00</option>
+                                    <option value="" name="time">20:00-22:00</option>
+                                    <option value="" name="time">21:00-22:00</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form__choose">
+                            <input type="checkbox"><p class="form__choose-text">Бесконтактная доставка <span class="choose-text">Курьер будет в маске и перчатках, оставит ваш заказ у двери</span></p>
+                            <input type="checkbox"><p class="form__choose-text">Доставить сюрпризом <span class="choose-text">Не будем предупеждать получателя заранее</span></p>
+                            <input type="checkbox"><p class="form__choose-text">Получу сам <span class="choose-text">Сообщите нам, чтобы избежать недоразумений</span></p>
+                        </div>
+                        <div class="form__whom">
+                            <p class="form__name1">Получатель</p>
+                            <input class="form__input-text" type="text" placeholder="Имя">
+                            <input class="form__input-text" type="text" placeholder="Телефон">
+                        </div>
+                        <div class="form__mail">
+                            <p class="form__name1">Заказчик (то есть вы)</p>
+                            <input class="form__input-text" type="text" placeholder="Имя">
+                            <input class="form__input-text" type="text" placeholder="Телефон" required>
+                            <input class="form__input-text" type="text" placeholder="Электронная почта" required>
+                        </div>
+                        
+                        <div class="form__textarea1">
+                            <textarea class="form__textarea" name="" id="" maxlength="100" placeholder="Текст открытки"></textarea>
+                        </div>
+                        <p class="form__where">Доставка по выбранному адресу обойдется в <span>1500 тг.</span>   </p>
+                    </form>
+                    
+                    <form action="">
+                        <div class="form2">
+                            <input class="basket__form-input" placeholder="Код купона" type="text">
+                            <button class="basket__form-btn1"><img src="img/form.svg" alt="icon"></button>
+                            <p class="basket__form-text">Промежуточный итог: <strong>2 товара на сумму 77000</strong> </p>
+                            <a href="#basket__tab-02" class="back__btn">Назад</a>
+                            <a href="#basket__tab-04" class="go__btn">Далее</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <a href="#basket__tab-04" class="basket__item-trigger">
+                Оплата
+            </a>
+            <div id="basket__tab-04" class="basket__tab">
+                <div id="basket__tab-04" class="basket__tab-item">
+                    <p class="choose__payment">Выберите способ оплаты</p>
+                    <form action="">
+                        <div class="payment__form">
+                            <div class="payment__item">
+                                <img class="payment__img" src="img/payment1.svg" alt="icon">
+                                <img class="payment__img" src="img/payment2.svg" alt="icon">
+                                <img class="payment__img" src="img/payment3.svg" alt="icon">
+                                <img class="payment__img" src="img/payment4.svg" alt="icon">
+                                <img class=" payment__img yandex" src="img/payment5.svg" alt="icon">
+                            </div>
+                            <div class="payment__check">
+                                <input class="payment__radio" type="radio" checked name="payment" value="cash">
+                                <input class="payment__radio" type="radio" name="payment" value="kaspi">
+                                <input class="payment__radio" type="radio" name="payment" value="card">
+                                <input class="payment__radio" type="radio" name="payment" value="paypal">
+                                <input class="payment__radio" type="radio" name="payment" value="qiwi">
+                                
+                            </div>
+                        </div>
+                    </form>
+                    <form action="">
+                        <div class="form2">
+                            <input class="basket__form-input" placeholder="Код купона" type="text">
+                            <button class="basket__form-btn1"><img src="img/form.svg" alt="icon"></button>
+                            <p class="basket__form-text">Промежуточный итог: <strong>2 товара на сумму 77000</strong> </p>
+                            <a href="#basket__tab-03" class="back__btn">Назад</a>
+                            <a href="#basket__tab-05" class="go__btn">Далее</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <a href="#basket__tab-05" class="basket__item-trigger">
+                Подтверждение
+            </a>
+            <div id="basket__tab-05" class="basket__tab">
+                <div id="basket__tab-05" class="basket__tab-item">
+                    <div class="complete">
+                        <p class="choose__payment">Итого</p>
+                    <div class="complete__basket">
+                        <p class="complete__text">2 товара:</p>
+                        <p class="complete__text-1">Розы нежно-розовые «Пиастр», 50 см</p>
+                        <p class="complete__text-1">Флисовый медведь, бежевый, 60 см</p>
+                        <a href="" class="complete__link">Изменить</a>
+                    </div>
+                    <div class="complete__courier">
+                        <p class="complete__text">Доставка курьером:</p>
+                        <p class="complete__text-1">г. Нур-Султан, ул. Аманжол, д. 12, кв. 56.</p>
+                        <p class="complete__text-1">21.02.2021, в 12:00</p>
+                        <p class="complete__text-1">Бесконтактная доставка</p>
+                        <p class="complete__text-1">Получатель: Айгуль, +77011234567</p>
+                        <p class="complete__text-1">Заказчик: Саша Некрасов, +77013213456, nekr18764@gmail.com</p>
+                        <p class="complete__text-1">Открытка с текстом: Поздравляю с рождением сына! От Бахи</p>
+                        <a href="" class="complete__link">Изменить</a>
+                    </div>
+                    <div class="complete__basket">
+                        <p class="complete__text">Оплата:</p>
+                        <p class="complete__text-1">Kaspi</p>
+                        <a href="" class="complete__link">Изменить</a>
+                    </div>
+                    <form action="">
+                        <div class="form2">
+                            <input class="basket__form-input" placeholder="Код купона" type="text">
+                            <button class="basket__form-btn1"><img src="img/form.svg" alt="icon"></button>
+                            <p class="basket__form-text">Промежуточный итог: <strong>2 товара на сумму 77000</strong> </p>
+                            <a href="#basket__tab-04" class="back__btn">Назад</a>
+                            <button class="go__btn">Оплатить</button>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <footer class="footer">
+            <div class="footer__inner">
+                <div class="footer__logo">
+                    <p class="footer__text">© Cvetogis, 2021</p>
+                    <a href="" class="footer__link">Публичная оферта</a>
+                    <a href="" class="footer__link">Защита покупателей</a>
+                </div>
+                <div class="footer__payment">
+                    <a href="" class="footer__payment-link"><img src="img/footer1.svg" alt="icon"></a>
+                    <a href="" class="footer__payment-link"><img src="img/footer2.svg" alt="icon"></a>
+                    <a href="" class="footer__payment-link"><img src="img/footer3.svg" alt="icon"></a>
+                    <a href="" class="footer__payment-link"><img src="img/footer4.svg" alt="icon"></a>
+                    <a href="" class="footer__payment-link"><img src="img/footer5.svg" alt="icon"></a>
+                    <a href="" class="footer__payment-link"><img src="img/footer6.svg" alt="icon"></a>
+                </div>
+            </div>
+        <div class="security">
+            <img src="img/shield.svg" alt="icon">
+            <p class="security__text">100% безопасность платежей</p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
